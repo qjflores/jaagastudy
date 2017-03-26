@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
+import LoginFormContainer from '../../ui/loginform/LoginFormContainer'
 
-class Dashboard extends Component {
+export class Login extends Component {
   render() {
     return(
       <main className="container">
         <div className="pure-g">
           <div className="pure-u-1-1">
-            <h1>Dashboard</h1>
-            <p><strong>Congratulations!</strong> If you're seeing this page, you've logged in with firebase correctly.</p>
+            <h1>Login</h1>
+            <p>Login Mesasge</p>
+            <LoginFormContainer />
           </div>
         </div>
       </main>
@@ -15,4 +17,4 @@ class Dashboard extends Component {
   }
 }
 
-export default Dashboard
+export default Login
