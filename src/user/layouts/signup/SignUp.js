@@ -10,7 +10,6 @@ class SignUp extends Component {
           <div className="pure-u-1-1">
             <h1>Sign Up</h1>
             <p>We've got your wallet information!</p>
-            <p>{}</p>
             <SignUpFormContainer />
           </div>
         </div>

@@ -9,8 +9,10 @@ import { UserIsAuthenticated, UserIsNotAuthenticated } from './util/wrappers.js'
 import App from './App';
 import Home from './layouts/home/Home';
 import Dashboard from './layouts/dashboard/Dashboard';
+import Accounts from './layouts/accounts/Accounts';
 import SignUp from './user/layouts/signup/SignUp';
 import Login from './user/layouts/login/Login'
+
 
 // Redux Store
 import store from './store';
@@ -36,6 +38,7 @@ ReactDOM.render((
           <Route path="dashboard" component={UserIsAuthenticated(Dashboard)} />
           <Route path="signup" component={UserIsNotAuthenticated(SignUp)} />
           <Route path="login" component={UserIsNotAuthenticated(Login)} />
+          <Route path="accounts" component={UserIsAuthenticated(Accounts)} />
         </Route>
       </Router>
     </Provider>

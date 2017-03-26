@@ -11,8 +11,7 @@ class Dashboard extends Component {
       <main className="container">
         <div className="pure-g">
           <div className="pure-u-1-1">
-            <h1>Dashboard</h1>
-            <p><strong>Congratulations!</strong> If you're seeing this page, you've logged in with firebase correctly.</p>
+            <h1>Purchase Passes</h1>
             <BuyFestivalPass />
             <BuyMonthlyPass />
             <BuyDayPass />
